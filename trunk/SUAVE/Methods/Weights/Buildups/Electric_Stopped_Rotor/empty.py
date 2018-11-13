@@ -127,7 +127,7 @@ def empty(config,
 
     # Component Weight Calculations
 
-    output.lift_rotors      = (prop(config.propulsors.network.propeller, maxLift) 
+    output.lift_rotors      = (prop(config.propulsors.network.propeller_lift, maxLift)
                                * (len(config.wings['main_wing'].motor_spanwise_locations) 
                                   + len(config.wings['main_wing'].motor_spanwise_locations))) *Units.kg
     output.thrust_rotors    = prop(config.propulsors.network.thrust_propeller, maxLift/5) *Units.kg
